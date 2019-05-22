@@ -8,7 +8,7 @@ app.set('view engine','hbs');
 //Registering for the partials to use in our hbs file...
 hbs.registerPartials(__dirname + '/views/partials');
 
-//Helper Function to add the rendering data to the partials
+//Helper Function to add the rendering data to the partials...
 hbs.registerHelper('currentYear',() => {
   return new Date().getFullYear();
 });
