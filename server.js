@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const port = process.SET.PORT || 1200;
 const app = express();
 app.set('view engine','hbs');
 
@@ -56,6 +57,6 @@ app.get('/bad' ,(req,res) => {
   })
 });
 
-app.listen(1200,() => {
-  console.log('Server Started with port 1200');
+app.listen(port,() => {
+  console.log(`Server Started with port ${port}`);
 });
