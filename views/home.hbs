@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		p{
+			color: blue;
+		}
+	</style>
+	<title>{{pageTitle}}</title>
+</head>
+<body>
+	{{> Header}}
+	<h1>Home Page</h1>
+	<p>{{welcomeMessage}}</p>
+	<p>Some Text Here to Show</p>
+	{{> footer}}  <!-- Injecting the partials named as footer-->
+</body>
+</html>
